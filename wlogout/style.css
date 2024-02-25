@@ -1,0 +1,44 @@
+* {
+	background-image: none;
+}
+window {
+	background-color: rgba(34 ,49 ,29, 0.5);
+}
+button {
+    color: #FFFFFF;
+	background-color: rgba(34,49,29, 0.9);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+	outline-style: none;
+	border-radius: 0px;	
+}
+
+button:active, button:hover {
+	background-color: rgba(173, 255, 173, 1);
+	outline-style: none;
+}
+
+#lock {
+    background-image: image(url("/home/camera/.config/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("/home/camera/.config/wlogout/icons/logout.png"));
+}
+
+#suspend {
+    background-image: image(url("/home/camera/.config/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+    background-image: image(url("/home/camera/.config/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+    background-image: image(url("/home/camera/.config/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("/home/camera/.config/wlogout/icons/reboot.png"));
+}
