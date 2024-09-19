@@ -1,44 +1,55 @@
 * {
 	background-image: none;
+	box-shadow: none;
 }
+
 window {
-	background-color: rgba(34 ,49 ,29, 0.5);
+	background-color: rgba(35, 38, 52, .5);
 }
+
 button {
+    border-radius: 10;
+    border-color: #232634;
+	border-style: solid;
+	border-width: 5px;
+	text-decoration-color: #FFFFFF;
     color: #FFFFFF;
-	background-color: rgba(34,49,29, 0.9);
+	background-color: rgba(48, 52, 70, 0.8);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 25%;
-	outline-style: none;
-	border-radius: 0px;	
+	margin: 2px;
 }
 
 button:active, button:hover {
-	background-color: rgba(173, 255, 173, 1);
+	background-color: rgba(166, 209, 137, 0.8);
 	outline-style: none;
+	border-radius: 10;
+    border-color: rgba(166, 209, 137, 0.8);
+	border-style: solid;
+	border-width: 5px;
 }
 
 #lock {
-    background-image: image(url("/home/camera/.config/wlogout/icons/lock.png"));
+    background-image: image(url("/home/quinn/.config/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
 }
 
 #logout {
-    background-image: image(url("/home/camera/.config/wlogout/icons/logout.png"));
+    background-image: image(url("/home/quinn/.config/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
 }
 
 #suspend {
-    background-image: image(url("/home/camera/.config/wlogout/icons/suspend.png"));
+    background-image: image(url("/home/quinn/.config/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
 }
 
 #hibernate {
-    background-image: image(url("/home/camera/.config/wlogout/icons/hibernate.png"));
+    background-image: image(url("/home/quinn/.config/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
 }
 
 #shutdown {
-    background-image: image(url("/home/camera/.config/wlogout/icons/shutdown.png"));
+    background-image: image(url("/home/quinn/.config/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
 }
 
 #reboot {
-    background-image: image(url("/home/camera/.config/wlogout/icons/reboot.png"));
+    background-image: image(url("/home/quinn/.config/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
 }
