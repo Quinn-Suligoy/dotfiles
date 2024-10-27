@@ -29,8 +29,8 @@
         "layer": "bottom",
         "position": "bottom",
         "fixed-center": "true",
-        "height": 27,
-        "modules-left": ["keyboard-state"],
+        "height": 30,
+        "modules-left": ["group/spotify","keyboard-state"],
         "modules-center": ["hyprland/workspaces"],
         "modules-right": ["group/commands"],
         "hyprland/workspaces": {
@@ -43,15 +43,18 @@
                 "empty": "",
                 "code": "󰨞",
                 "kitty": "",
+                "floating": "",
                 "firefox": "󰈹",
                 "vesktop": "",
                 "spotify": "",
                 "steam": "",
                 "thunar": "",
+                "Minecraft": "󰍳",
                 "title<.*hyprland.*>": "",
                 "title<.*archwiki.*>": "󰣇",
                 "title<.*github.*>": "",
-                "title<.*youtube.*>": ""
+                "title<.*youtube.*>": "",
+                "initialTitle<kitty>": ""
             }
         },
         "keyboard-state": {
@@ -61,6 +64,33 @@
                 "locked": "",
                 "unlocked": " "
             }
+        },
+        "group/spotify": {
+            "orientation": "horizontal",
+            "modules": ["custom/spotify-song","custom/spotify-back","custom/spotify-playpause","custom/spotify-next"]
+        },
+        "custom/spotify-song": {
+            "return-type": "json",
+            "format": "{}",
+            "interval": 5,
+            "exec": "./.config/waybar/modules/spotify/song.sh"
+        },
+        "custom/spotify-back": {
+            "tooltip": false,
+            "format": "  󰒮",
+            "on-click": "playerctl --player spotify previous"
+        },
+        "custom/spotify-playpause": {
+            "tooltip": false,
+            "format": " {} ",
+            "interval": 1,
+            "exec": "./.config/waybar/modules/spotify/player.sh",
+            "on-click": "playerctl --player spotify play-pause"
+        },
+        "custom/spotify-next": {
+            "tooltip": false,
+            "format": "󰒭",
+            "on-click": "playerctl --player spotify next"
         },
         "group/commands": {
             "orientation": "horizontal",
